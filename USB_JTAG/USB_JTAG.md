@@ -1,5 +1,10 @@
 A small FT232H-based USB-to-JTAG board
 
+**NOTE**:  This only supports voltage level 3.3v because that's the only level I 
+needed. If you need other levels, add a level translator IC to the design.
+
+![Picture of the board finished](usb_jtag_board_pic.jpg "The USB-JATG board finished")
+
 # Features
 
 - Mostly planned to be used for USB-to-JTAG
