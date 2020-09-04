@@ -1,0 +1,18 @@
+(module jlc_smt_toolinghole (layer F.Cu) (tedit 5F09A2AC)
+  (descr "JLCPCB SMT 1.1152mm tooling hole")
+  (tags "JLCPCB SMT 1.1152mm tooling hole")
+  (attr virtual)
+  (fp_text reference REF** (at 0 -3.2) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value jlc_smt_toolinghole (at 0 3.2) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text user %R (at 0 -4.7) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_circle (center 0 0) (end 1.6 0.1) (layer Cmts.User) (width 0.15))
+  (fp_circle (center 0 0) (end 2.35 0) (layer F.CrtYd) (width 0.05))
+  (pad "" np_thru_hole circle (at 0 0) (size 1.152 1.152) (drill 1.152) (layers *.Cu)
+    (solder_mask_margin 0.148) (solder_paste_margin 0.148) (clearance 0.148) (zone_connect 0))
+)

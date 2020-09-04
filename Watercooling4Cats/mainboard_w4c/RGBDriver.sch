@@ -1,0 +1,134 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4700 1600 1    50   Input ~ 0
+R_CONN
+Text HLabel 2900 1650 1    50   Input ~ 0
+G_CONN
+Text HLabel 3850 1600 1    50   Input ~ 0
+B_CONN
+$Comp
+L JLCPCB_smt:AO3400A Q1
+U 1 1 5F2AA4ED
+P 2800 2050
+F 0 "Q1" H 3005 2096 50  0000 L CNN
+F 1 "AO3400A" H 3005 2005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3000 1975 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 2800 2050 50  0001 L CNN
+	1    2800 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1850 2900 1650
+$Comp
+L power:GND #PWR0126
+U 1 1 5F2AE67F
+P 3850 3250
+F 0 "#PWR0126" H 3850 3000 50  0001 C CNN
+F 1 "GND" H 3855 3077 50  0000 C CNN
+F 2 "" H 3850 3250 50  0001 C CNN
+F 3 "" H 3850 3250 50  0001 C CNN
+	1    3850 3250
+	1    0    0    -1  
+$EndComp
+Text HLabel 2150 2050 0    50   Input ~ 0
+PWM_LED_G_3.3
+$Comp
+L JLCPCB_smt:AO3400A Q2
+U 1 1 5F2AFAED
+P 3750 2400
+F 0 "Q2" H 3955 2446 50  0000 L CNN
+F 1 "AO3400A" H 3955 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3950 2325 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 3750 2400 50  0001 L CNN
+	1    3750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L JLCPCB_smt:AO3400A Q3
+U 1 1 5F2B0333
+P 4600 2850
+F 0 "Q3" H 4805 2896 50  0000 L CNN
+F 1 "AO3400A" H 4805 2805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4800 2775 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 4600 2850 50  0001 L CNN
+	1    4600 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2250 2900 3250
+Wire Wire Line
+	3850 2600 3850 3250
+Connection ~ 3850 3250
+Wire Wire Line
+	3850 3250 4700 3250
+Wire Wire Line
+	4700 3050 4700 3250
+Wire Wire Line
+	4700 2650 4700 1600
+Wire Wire Line
+	3850 2200 3850 1600
+Text HLabel 2150 2400 0    50   Input ~ 0
+PWM_LED_B_3.3
+Text HLabel 2150 2850 0    50   Input ~ 0
+PWM_LED_R_3.3
+Wire Wire Line
+	2900 3250 3850 3250
+$Comp
+L Device:R R16
+U 1 1 5F3E2B15
+P 2400 2050
+F 0 "R16" V 2193 2050 50  0000 C CNN
+F 1 "160R" V 2284 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2330 2050 50  0001 C CNN
+F 3 "~" H 2400 2050 50  0001 C CNN
+	1    2400 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 2050 2550 2050
+Wire Wire Line
+	2250 2050 2150 2050
+$Comp
+L Device:R R17
+U 1 1 5F3E4781
+P 3250 2400
+F 0 "R17" V 3043 2400 50  0000 C CNN
+F 1 "160R" V 3134 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3180 2400 50  0001 C CNN
+F 3 "~" H 3250 2400 50  0001 C CNN
+	1    3250 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5F3E4C24
+P 4100 2850
+F 0 "R18" V 3893 2850 50  0000 C CNN
+F 1 "160R" V 3984 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4030 2850 50  0001 C CNN
+F 3 "~" H 4100 2850 50  0001 C CNN
+	1    4100 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 2400 2150 2400
+Wire Wire Line
+	2150 2850 3950 2850
+Wire Wire Line
+	3400 2400 3550 2400
+Wire Wire Line
+	4250 2850 4400 2850
+$EndSCHEMATC

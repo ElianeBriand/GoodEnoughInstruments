@@ -50,3 +50,17 @@ eagle.epf
 
 # file locks introduced since 7.x
 *.lck
+
+*encumbered_*
+*.o
+*.bin
+*.elf
+
+*.pdf
+*.sch-bak
+*.odt
+*.kicad_pcb-bak
+
+
+Watercooling4Cats/exports
+

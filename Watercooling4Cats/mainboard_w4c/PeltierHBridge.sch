@@ -1,0 +1,244 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4300 650  0    50   Input ~ 0
+V_CC_PELTIER
+Text HLabel 3900 2550 2    50   Output ~ 0
+V_CC_HBRIDGE_1
+Text HLabel 4700 2800 0    50   Output ~ 0
+V_CC_HBRIDGE_2
+Text HLabel 4300 5150 0    50   Input ~ 0
+GND_PELTIER
+$Comp
+L JLCPCB_smt:AO3400A Q?
+U 1 1 5F448168
+P 1800 3550
+F 0 "Q?" H 2005 3596 50  0000 L CNN
+F 1 "AO3400A" H 2005 3505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2000 3475 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 1800 3550 50  0001 L CNN
+	1    1800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F44AC03
+P 1450 3550
+F 0 "R?" V 1657 3550 50  0000 C CNN
+F 1 "165R" V 1566 3550 50  0000 C CNN
+F 2 "" V 1380 3550 50  0001 C CNN
+F 3 "~" H 1450 3550 50  0001 C CNN
+	1    1450 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F44B475
+P 1200 3400
+F 0 "R?" H 1050 3450 50  0000 L CNN
+F 1 "10K" H 1000 3350 50  0000 L CNN
+F 2 "" V 1130 3400 50  0001 C CNN
+F 3 "~" H 1200 3400 50  0001 C CNN
+	1    1200 3400
+	1    0    0    -1  
+$EndComp
+Text HLabel 1000 2600 0    50   Input ~ 0
+V_3.3_MCU
+Text HLabel 1150 1950 0    50   Input ~ 0
+EN_PELTIER_REV
+Wire Wire Line
+	1300 3550 1200 3550
+$Comp
+L JLCPCB_smt:AO3400A Q?
+U 1 1 5F458523
+P 3200 3600
+F 0 "Q?" H 3405 3646 50  0000 L CNN
+F 1 "AO3400A" H 3405 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3400 3525 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 3200 3600 50  0001 L CNN
+	1    3200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F458529
+P 2850 3600
+F 0 "R?" V 3057 3600 50  0000 C CNN
+F 1 "165R" V 2966 3600 50  0000 C CNN
+F 2 "" V 2780 3600 50  0001 C CNN
+F 3 "~" H 2850 3600 50  0001 C CNN
+	1    2850 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F45852F
+P 2600 3450
+F 0 "R?" H 2450 3500 50  0000 L CNN
+F 1 "10K" H 2400 3400 50  0000 L CNN
+F 2 "" V 2530 3450 50  0001 C CNN
+F 3 "~" H 2600 3450 50  0001 C CNN
+	1    2600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3600 2600 3600
+Wire Wire Line
+	1900 3150 1900 3350
+Wire Wire Line
+	3300 3150 3300 3400
+Connection ~ 3300 3150
+Wire Wire Line
+	3300 3150 1900 3150
+$Comp
+L JLCPCB_smt:AO3400A Q?
+U 1 1 5F461680
+P 5450 3600
+F 0 "Q?" H 5655 3646 50  0000 L CNN
+F 1 "AO3400A" H 5655 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5650 3525 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 5450 3600 50  0001 L CNN
+	1    5450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F461686
+P 5100 3600
+F 0 "R?" V 5307 3600 50  0000 C CNN
+F 1 "165R" V 5216 3600 50  0000 C CNN
+F 2 "" V 5030 3600 50  0001 C CNN
+F 3 "~" H 5100 3600 50  0001 C CNN
+	1    5100 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 3600 4850 3600
+$Comp
+L JLCPCB_smt:AO3400A Q?
+U 1 1 5F461693
+P 6850 3650
+F 0 "Q?" H 7055 3696 50  0000 L CNN
+F 1 "AO3400A" H 7055 3605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7050 3575 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 6850 3650 50  0001 L CNN
+	1    6850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F461699
+P 6500 3650
+F 0 "R?" V 6707 3650 50  0000 C CNN
+F 1 "165R" V 6616 3650 50  0000 C CNN
+F 2 "" V 6430 3650 50  0001 C CNN
+F 3 "~" H 6500 3650 50  0001 C CNN
+	1    6500 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F46169F
+P 6250 3800
+F 0 "R?" H 6100 3850 50  0000 L CNN
+F 1 "10K" H 6050 3750 50  0000 L CNN
+F 2 "" V 6180 3800 50  0001 C CNN
+F 3 "~" H 6250 3800 50  0001 C CNN
+	1    6250 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3650 6250 3650
+Wire Wire Line
+	5550 3150 5550 3400
+Wire Wire Line
+	5550 3150 6950 3150
+Wire Wire Line
+	6950 3150 6950 3450
+Wire Wire Line
+	3300 3800 3300 4400
+Wire Wire Line
+	3300 4400 1900 4400
+Wire Wire Line
+	1900 4400 1900 3750
+$Comp
+L Device:R R?
+U 1 1 5F46168C
+P 4850 3750
+F 0 "R?" H 4700 3800 50  0000 L CNN
+F 1 "10K" H 4650 3700 50  0000 L CNN
+F 2 "" V 4780 3750 50  0001 C CNN
+F 3 "~" H 4850 3750 50  0001 C CNN
+	1    4850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F4797DF
+P 4850 3900
+F 0 "#PWR?" H 4850 3650 50  0001 C CNN
+F 1 "GND" H 4855 3727 50  0000 C CNN
+F 2 "" H 4850 3900 50  0001 C CNN
+F 3 "" H 4850 3900 50  0001 C CNN
+	1    4850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F479B4C
+P 6250 3950
+F 0 "#PWR?" H 6250 3700 50  0001 C CNN
+F 1 "GND" H 6255 3777 50  0000 C CNN
+F 2 "" H 6250 3950 50  0001 C CNN
+F 3 "" H 6250 3950 50  0001 C CNN
+	1    6250 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5150 4300 4400
+Wire Wire Line
+	4300 4400 3300 4400
+Connection ~ 3300 4400
+Wire Wire Line
+	4300 4400 5550 4400
+Wire Wire Line
+	5550 4400 5550 3800
+Connection ~ 4300 4400
+Wire Wire Line
+	5550 4400 6950 4400
+Wire Wire Line
+	6950 4400 6950 3850
+Connection ~ 5550 4400
+Wire Wire Line
+	3900 2550 3300 2550
+Wire Wire Line
+	3300 2550 3300 3150
+Wire Wire Line
+	4700 2800 5550 2800
+Wire Wire Line
+	5550 2800 5550 3150
+Connection ~ 5550 3150
+Wire Wire Line
+	1000 2600 1200 2600
+Wire Wire Line
+	1200 2600 1200 3000
+Wire Wire Line
+	2600 3300 2600 3000
+Wire Wire Line
+	2600 3000 1200 3000
+Connection ~ 1200 3000
+Wire Wire Line
+	1200 3000 1200 3250
+$EndSCHEMATC

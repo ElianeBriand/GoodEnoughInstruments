@@ -1,0 +1,870 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 10200 2600 2    50   Input ~ 0
+V_MAINFAN_12V
+Text GLabel 10200 2500 2    50   Input ~ 0
+GND_MAINFAN
+Text GLabel 10200 2700 2    50   Input ~ 0
+SENSE_MAINFAN
+Text GLabel 10200 2800 2    50   Input ~ 0
+PWM_MAINFAN_5V
+Text GLabel 9600 3700 2    50   Input ~ 0
+GND_PUMP
+Text GLabel 9600 3800 2    50   Input ~ 0
+V_PUMP_12V
+Text GLabel 9600 3900 2    50   Input ~ 0
+SENSE_PUMP
+Text GLabel 9600 4000 2    50   Input ~ 0
+PWM_PUMP_5V
+Wire Wire Line
+	9750 2500 10050 2500
+$Comp
+L Connector:Conn_01x04_Male J10
+U 1 1 5EE7A790
+P 9550 2600
+F 0 "J10" H 9650 2900 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 9650 2800 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9550 2600 50  0001 C CNN
+F 3 "~" H 9550 2600 50  0001 C CNN
+	1    9550 2600
+	1    0    0    -1  
+$EndComp
+Text Notes 9250 2250 0    50   ~ 0
+2.54mm fan header
+Text GLabel 1600 2750 2    50   Input ~ 0
+Vin_24
+$Comp
+L power:GND #PWR0101
+U 1 1 5EE9781A
+P 1500 3150
+F 0 "#PWR0101" H 1500 2900 50  0001 C CNN
+F 1 "GND" H 1505 2977 50  0000 C CNN
+F 2 "" H 1500 3150 50  0001 C CNN
+F 3 "" H 1500 3150 50  0001 C CNN
+	1    1500 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2950 1500 3150
+Text Notes 750  3550 0    50   ~ 0
+No reverse polarity protection\nExplicit message about barrel jack polarity on silkscreen
+$Comp
+L power:GND #PWR0102
+U 1 1 5EF7835F
+P 10150 2250
+F 0 "#PWR0102" H 10150 2000 50  0001 C CNN
+F 1 "GND" H 10155 2077 50  0000 C CNN
+F 2 "" H 10150 2250 50  0001 C CNN
+F 3 "" H 10150 2250 50  0001 C CNN
+	1    10150 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 2250 10050 2250
+Wire Wire Line
+	10050 2250 10050 2500
+Connection ~ 10050 2500
+Wire Wire Line
+	10050 2500 10200 2500
+Text GLabel 1050 4150 0    50   Input ~ 0
+Vin_24
+Wire Wire Line
+	1050 4150 1350 4150
+Wire Wire Line
+	9750 2800 9950 2800
+Wire Wire Line
+	9750 2700 10050 2700
+Wire Wire Line
+	9150 4000 9450 4000
+Wire Wire Line
+	9150 3900 9550 3900
+Connection ~ 9200 4250
+Wire Wire Line
+	8900 4250 8900 4400
+Wire Wire Line
+	9200 4250 8900 4250
+$Comp
+L power:GND #PWR0103
+U 1 1 5EF80FC7
+P 8900 4400
+F 0 "#PWR0103" H 8900 4150 50  0001 C CNN
+F 1 "GND" H 8905 4227 50  0000 C CNN
+F 2 "" H 8900 4400 50  0001 C CNN
+F 3 "" H 8900 4400 50  0001 C CNN
+	1    8900 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3800 9150 3800
+Connection ~ 9300 3800
+Wire Wire Line
+	9300 4150 9300 3800
+Wire Wire Line
+	9200 3700 9600 3700
+Connection ~ 9200 3700
+Wire Wire Line
+	9200 4250 9200 3700
+Wire Wire Line
+	9300 4250 9200 4250
+Text Notes 8550 -1300 0    50   ~ 0
+2.54mm pump header
+Text Notes 8750 4800 0    50   ~ 0
+"Molex" 5.25-drive power connector\n(Actually AMP connector ?)
+$Comp
+L Connector:Conn_01x04_Female J9
+U 1 1 5EE8CBC0
+P 9500 4250
+F 0 "J9" H 9600 4200 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 9150 3950 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9500 4250 50  0001 C CNN
+F 3 "~" H 9500 4250 50  0001 C CNN
+	1    9500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J8
+U 1 1 5EE7F448
+P 8950 3800
+F 0 "J8" H 9050 4100 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 9050 4000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8950 3800 50  0001 C CNN
+F 3 "~" H 8950 3800 50  0001 C CNN
+	1    8950 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3700 9200 3700
+Wire Wire Line
+	9600 3800 9300 3800
+Text GLabel 8650 5600 2    50   Input ~ 0
+V_AUXFAN_12V
+Text GLabel 8650 5500 2    50   Input ~ 0
+GND_AUXFAN
+Text GLabel 8650 5700 2    50   Input ~ 0
+SENSE_AUXFAN
+Text GLabel 8650 5800 2    50   Input ~ 0
+PWM_AUXFAN_5V
+Wire Wire Line
+	8200 5500 8500 5500
+$Comp
+L Connector:Conn_01x04_Male J7
+U 1 1 5F140ECB
+P 8000 5600
+F 0 "J7" H 8100 5900 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 8100 5800 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8000 5600 50  0001 C CNN
+F 3 "~" H 8000 5600 50  0001 C CNN
+	1    8000 5600
+	1    0    0    -1  
+$EndComp
+Text Notes 7700 5250 0    50   ~ 0
+2.54mm fan header
+$Comp
+L power:GND #PWR0104
+U 1 1 5F140ED2
+P 8600 5250
+F 0 "#PWR0104" H 8600 5000 50  0001 C CNN
+F 1 "GND" H 8605 5077 50  0000 C CNN
+F 2 "" H 8600 5250 50  0001 C CNN
+F 3 "" H 8600 5250 50  0001 C CNN
+	1    8600 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5250 8500 5250
+Wire Wire Line
+	8500 5250 8500 5500
+Connection ~ 8500 5500
+Wire Wire Line
+	8500 5500 8650 5500
+Wire Wire Line
+	8200 5700 8350 5700
+Wire Wire Line
+	7700 4350 7700 4150
+Wire Wire Line
+	7700 3700 7550 3700
+Wire Wire Line
+	9950 2800 9950 3000
+Wire Wire Line
+	9950 3000 7550 3000
+Connection ~ 9950 2800
+Wire Wire Line
+	9950 2800 10200 2800
+Wire Wire Line
+	10050 2700 10050 3100
+Wire Wire Line
+	10050 3100 7550 3100
+Connection ~ 10050 2700
+Wire Wire Line
+	10050 2700 10200 2700
+Wire Wire Line
+	9550 3900 9550 3200
+Wire Wire Line
+	9550 3200 7550 3200
+Connection ~ 9550 3900
+Wire Wire Line
+	9550 3900 9600 3900
+Wire Wire Line
+	9450 4000 9450 3300
+Wire Wire Line
+	9450 3300 7550 3300
+Connection ~ 9450 4000
+Wire Wire Line
+	9450 4000 9600 4000
+Wire Wire Line
+	9300 4150 8450 4150
+Connection ~ 9300 4150
+Connection ~ 7700 4150
+Wire Wire Line
+	7700 4150 7700 3700
+Wire Wire Line
+	8200 5800 8250 5800
+Wire Wire Line
+	9750 2600 10150 2600
+Wire Wire Line
+	7550 3500 8250 3500
+Wire Wire Line
+	8250 3500 8250 5800
+Connection ~ 8250 5800
+Wire Wire Line
+	8250 5800 8650 5800
+Wire Wire Line
+	7550 3400 8350 3400
+Wire Wire Line
+	8350 3400 8350 5700
+Connection ~ 8350 5700
+Wire Wire Line
+	8350 5700 8650 5700
+Wire Wire Line
+	8450 3500 10150 3500
+Connection ~ 10150 2600
+Wire Wire Line
+	10150 2600 10200 2600
+Wire Wire Line
+	8200 5600 8400 5600
+Wire Wire Line
+	8450 3500 8450 4150
+Connection ~ 8450 4150
+Wire Wire Line
+	8450 4150 8400 4150
+Wire Wire Line
+	5250 2100 4050 2100
+Text GLabel 7750 1000 0    50   Input ~ 0
+Vin_24
+$Sheet
+S 7900 800  1600 800 
+U 5EE08608
+F0 "Peltier Constant Current Buck" 50
+F1 "PeltierConstantCurrent.sch" 50
+F2 "Vin_24v" I L 7900 1000 50 
+F3 "V_CC_Peltier" I R 9500 1350 50 
+F4 "GND_Peltier" I R 9500 1500 50 
+F5 "EN_CC_P" I L 7900 1150 50 
+F6 "V_3.3_MCU" I L 7900 850 50 
+F7 "SMBUS_SCL" I R 9500 950 50 
+F8 "SMBUS_SDA" B R 9500 1050 50 
+F9 "V_CC_IADJ" I L 7900 1400 50 
+$EndSheet
+Text GLabel 10000 1500 2    50   Input ~ 0
+V_TEC_GND
+Text GLabel 10000 1350 2    50   Input ~ 0
+V_TEC_CC
+Text Notes 2600 5750 0    50   ~ 0
+RGB led header (2.54 round)
+$Comp
+L Connector:Conn_01x04_Male J4
+U 1 1 5F23A872
+P 3100 5350
+F 0 "J4" H 3200 5650 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 3200 5550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3100 5350 50  0001 C CNN
+F 3 "~" H 3100 5350 50  0001 C CNN
+	1    3100 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 5250 3900 5250
+Wire Wire Line
+	3900 5250 3900 4350
+Wire Wire Line
+	2950 4350 2950 4250
+Wire Wire Line
+	2950 4250 2900 4250
+Wire Wire Line
+	2950 4350 3900 4350
+Wire Wire Line
+	3300 5550 4200 5550
+Wire Wire Line
+	4200 5350 3300 5350
+Wire Wire Line
+	4200 5450 3300 5450
+$Sheet
+S 4200 5150 1050 650 
+U 5F27A1C4
+F0 "RGB Driver" 50
+F1 "RGBDriver.sch" 50
+F2 "R_CONN" I L 4200 5450 50 
+F3 "G_CONN" I L 4200 5350 50 
+F4 "B_CONN" I L 4200 5550 50 
+F5 "PWM_LED_G_3.3" I R 5250 5300 50 
+F6 "PWM_LED_B_3.3" I R 5250 5400 50 
+F7 "PWM_LED_R_3.3" I R 5250 5500 50 
+$EndSheet
+Connection ~ 3900 4350
+Wire Wire Line
+	3900 4350 7700 4350
+$Sheet
+S 6300 2900 1250 950 
+U 5EEC1828
+F0 "Fan controller" 50
+F1 "fan_controller.sch" 50
+F2 "V_MCU_3.3" I L 6300 3000 50 
+F3 "SMBUS_SCL" I L 6300 3150 50 
+F4 "SMBUS_SDA" B L 6300 3250 50 
+F5 "PWM_MAINFAN" O R 7550 3000 50 
+F6 "SENSE_MAINFAN" I R 7550 3100 50 
+F7 "V_MAINFAN_12" I R 7550 3700 50 
+F8 "SENSE_PUMP" I R 7550 3200 50 
+F9 "PWM_PUMP" O R 7550 3300 50 
+F10 "SENSE_AUXFAN" I R 7550 3400 50 
+F11 "PWM_AUXFAN" O R 7550 3500 50 
+F12 "V_ADJ_CC" I R 7550 3600 50 
+F13 "THERM_SMBALERT" I L 6300 3350 50 
+F14 "D1+" O L 6300 3550 50 
+F15 "D1-" O L 6300 3600 50 
+F16 "D2+" O L 6300 3750 50 
+F17 "D2-" O L 6300 3800 50 
+$EndSheet
+$Sheet
+S 5250 1250 1850 1550
+U 5EE187C5
+F0 "STM32 MCU" 50
+F1 "STM32.sch" 50
+F2 "V_3.3_MC" I L 5250 1350 50 
+F3 "EN_CC_PELTIER" I R 7100 1400 50 
+F4 "SMBUS_SCL" O L 5250 1950 50 
+F5 "SMBUS_SDA" B L 5250 1850 50 
+F6 "BOOT0" I L 5250 2100 50 
+F7 "BOOT1" I L 5250 2200 50 
+F8 "USART1_TX" O L 5250 2300 50 
+F9 "USART1_RX" I L 5250 2400 50 
+F10 "PWM_LED_G" O L 5250 2550 50 
+F11 "PWM_LED_R" O L 5250 2750 50 
+F12 "PWM_LED_B" O L 5250 2650 50 
+F13 "JTCK_SWCLK" I R 7100 2250 50 
+F14 "JTDI" I R 7100 2050 50 
+F15 "JTMS_SWDIO" I R 7100 2150 50 
+F16 "JTDO" O R 7100 2350 50 
+F17 "JNTRST" I R 7100 1950 50 
+F18 "NRST" I R 7100 2450 50 
+F19 "SMBALERT" I L 5250 1750 50 
+F20 "I2C_DIS_SCL" O L 5250 1600 50 
+F21 "I2C_DIS_SDA" B L 5250 1500 50 
+$EndSheet
+Wire Wire Line
+	5250 2550 4750 2550
+Wire Wire Line
+	4750 2550 4750 4950
+Wire Wire Line
+	4750 4950 5350 4950
+Wire Wire Line
+	5350 4950 5350 5300
+Wire Wire Line
+	5350 5300 5250 5300
+Wire Wire Line
+	5250 2650 4800 2650
+Wire Wire Line
+	4800 2650 4800 4900
+Wire Wire Line
+	4800 4900 5400 4900
+Wire Wire Line
+	5400 4900 5400 5400
+Wire Wire Line
+	5400 5400 5250 5400
+Wire Wire Line
+	5250 2750 4900 2750
+Wire Wire Line
+	4900 2750 4900 4850
+Wire Wire Line
+	4900 4850 5450 4850
+Wire Wire Line
+	5450 4850 5450 5500
+Wire Wire Line
+	5450 5500 5250 5500
+$Comp
+L Connector:Conn_01x08_Female J6
+U 1 1 5F3500B8
+P 7600 2050
+F 0 "J6" H 7492 1425 50  0000 C CNN
+F 1 "Conn_01x08_Female" H 7492 1516 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 7600 2050 50  0001 C CNN
+F 3 "~" H 7600 2050 50  0001 C CNN
+	1    7600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F356A24
+P 7400 1850
+F 0 "#PWR0106" H 7400 1600 50  0001 C CNN
+F 1 "GND" V 7405 1722 50  0000 R CNN
+F 2 "" H 7400 1850 50  0001 C CNN
+F 3 "" H 7400 1850 50  0001 C CNN
+	1    7400 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 950  7250 950 
+Wire Wire Line
+	7400 950  7400 1750
+Connection ~ 4850 950 
+Wire Wire Line
+	7100 1950 7400 1950
+Wire Wire Line
+	7100 2050 7400 2050
+Wire Wire Line
+	7100 2150 7400 2150
+Wire Wire Line
+	7100 2250 7400 2250
+Wire Wire Line
+	7100 2350 7400 2350
+Wire Wire Line
+	7100 2450 7400 2450
+Wire Wire Line
+	7100 1400 7550 1400
+Wire Wire Line
+	7550 1400 7550 1150
+Wire Wire Line
+	7550 1150 7900 1150
+Wire Wire Line
+	7900 1000 7750 1000
+Wire Wire Line
+	9500 1350 9850 1350
+Wire Wire Line
+	9500 1500 9850 1500
+Wire Wire Line
+	7900 1400 7800 1400
+Wire Wire Line
+	7800 1400 7800 3600
+Wire Wire Line
+	7800 3600 7550 3600
+Wire Wire Line
+	7250 950  7250 850 
+Wire Wire Line
+	7250 850  7900 850 
+Connection ~ 7250 950 
+Wire Wire Line
+	7250 950  7400 950 
+Wire Wire Line
+	8400 5600 8400 4150
+Connection ~ 8400 5600
+Wire Wire Line
+	8400 5600 8650 5600
+Connection ~ 8400 4150
+Wire Wire Line
+	8400 4150 7700 4150
+Wire Wire Line
+	4950 1750 5250 1750
+$Sheet
+S 3100 750  1100 350 
+U 5EEA044C
+F0 "MCU LDO 3.3V" 50
+F1 "MCU_LDO_33.sch" 50
+F2 "V_MCU_3.3" O R 4200 950 50 
+F3 "V_AUX_3.3" I L 3100 850 50 
+F4 "V_12V_IN" I L 3100 1000 50 
+$EndSheet
+$Comp
+L Connector:Conn_01x08_Female J2
+U 1 1 5F0A72DA
+P 1600 1250
+F 0 "J2" H 1492 625 50  0000 C CNN
+F 1 "Conn_01x08_Female" H 1492 716 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 1600 1250 50  0001 C CNN
+F 3 "~" H 1600 1250 50  0001 C CNN
+	1    1600 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5F0AEA68
+P 1800 850
+F 0 "#PWR0107" H 1800 600 50  0001 C CNN
+F 1 "GND" V 1805 722 50  0000 R CNN
+F 2 "" H 1800 850 50  0001 C CNN
+F 3 "" H 1800 850 50  0001 C CNN
+	1    1800 850 
+	0    -1   -1   0   
+$EndComp
+Text Notes 1250 1750 0    50   ~ 0
+Orient correctly for mechanical\ncompatiblity with screen
+Wire Wire Line
+	4850 950  4850 1350
+Wire Wire Line
+	5250 1350 4850 1350
+Text Label 5100 1500 0    50   ~ 0
+DIS_SDA
+Text Label 5100 1600 0    50   ~ 0
+DIS_SCL
+Wire Bus Line
+	4950 1400 4200 1400
+Wire Bus Line
+	4200 1400 4200 1300
+Entry Wire Line
+	4950 1400 5050 1500
+Entry Wire Line
+	4950 1400 5050 1500
+Wire Wire Line
+	5050 1500 5250 1500
+Entry Wire Line
+	4950 1400 5050 1500
+Wire Bus Line
+	4950 1400 4950 1500
+Entry Wire Line
+	4950 1500 5050 1600
+Wire Wire Line
+	5050 1600 5250 1600
+Entry Wire Line
+	2450 950  2350 850 
+Entry Wire Line
+	2450 1050 2350 950 
+Wire Bus Line
+	2450 1300 4200 1300
+Text Label 1900 1050 0    50   ~ 0
+DIS_SCL
+Wire Wire Line
+	9500 950  9900 950 
+Wire Wire Line
+	9500 1050 9900 1050
+Text Label 9550 950  0    50   ~ 0
+SMBUS_SCL
+Text Label 9550 1050 0    50   ~ 0
+SMBUS_SDA
+Entry Wire Line
+	9900 950  10000 850 
+Entry Wire Line
+	9900 1050 10000 950 
+Wire Bus Line
+	4600 650  4600 1650
+Wire Bus Line
+	4600 650  10000 650 
+Text Label 4950 1750 0    50   ~ 0
+SMBALERT
+Entry Wire Line
+	4950 1750 4850 1650
+Wire Wire Line
+	5250 1850 4950 1850
+Wire Wire Line
+	5250 1950 4950 1950
+Entry Wire Line
+	4850 1750 4950 1850
+Entry Wire Line
+	4850 1850 4950 1950
+Text Label 4950 1850 0    50   ~ 0
+SMBUS_SDA
+Text Label 4950 1950 0    50   ~ 0
+SMBUS_SCL
+Wire Bus Line
+	4850 1650 4600 1650
+Connection ~ 4600 1650
+Wire Wire Line
+	4850 3000 6300 3000
+Connection ~ 4850 1350
+Wire Wire Line
+	6300 3150 5900 3150
+Wire Wire Line
+	6300 3250 5900 3250
+Text Label 5900 3150 0    50   ~ 0
+SMBUS_SCL
+Text Label 5900 3250 0    50   ~ 0
+SMBUS_SDA
+Entry Wire Line
+	5900 3150 5800 3050
+Entry Wire Line
+	5900 3250 5800 3150
+Wire Bus Line
+	4600 3050 5800 3050
+Wire Wire Line
+	6300 3350 5900 3350
+Text Label 5900 3350 0    50   ~ 0
+SMBALERT
+Entry Wire Line
+	5800 3250 5900 3350
+Wire Wire Line
+	3100 850  2800 850 
+Wire Wire Line
+	2800 2050 2800 850 
+Connection ~ 2800 850 
+Wire Wire Line
+	2800 850  2600 850 
+$Comp
+L Connector:Conn_01x04_Female J11
+U 1 1 5F2CDE97
+P 5600 3750
+F 0 "J11" H 5492 3325 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 5492 3416 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5600 3750 50  0001 C CNN
+F 3 "~" H 5600 3750 50  0001 C CNN
+	1    5600 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 3550 5800 3550
+Wire Wire Line
+	6300 3600 5900 3600
+Wire Wire Line
+	5900 3600 5900 3650
+Wire Wire Line
+	5900 3650 5800 3650
+Wire Wire Line
+	6300 3750 5800 3750
+Wire Wire Line
+	6300 3800 5900 3800
+Wire Wire Line
+	5900 3800 5900 3850
+Wire Wire Line
+	5900 3850 5800 3850
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F326326
+P 1350 2750
+F 0 "TP1" V 1545 2822 50  0000 C CNN
+F 1 "TestPoint" V 1454 2822 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D3.80mm_Drill2.0mm" H 1550 2750 50  0001 C CNN
+F 3 "~" H 1550 2750 50  0001 C CNN
+	1    1350 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F3266E1
+P 1350 2950
+F 0 "TP2" V 1545 3022 50  0000 C CNN
+F 1 "TestPoint" V 1454 3022 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D3.80mm_Drill2.0mm" H 1550 2950 50  0001 C CNN
+F 3 "~" H 1550 2950 50  0001 C CNN
+	1    1350 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5F038328
+P 3550 3050
+F 0 "TP3" V 3745 3122 50  0000 C CNN
+F 1 "TestPoint" V 3654 3122 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 3750 3050 50  0001 C CNN
+F 3 "~" H 3750 3050 50  0001 C CNN
+	1    3550 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5F0387B0
+P 3550 3350
+F 0 "TP4" V 3745 3422 50  0000 C CNN
+F 1 "TestPoint" V 3654 3422 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 3750 3350 50  0001 C CNN
+F 3 "~" H 3750 3350 50  0001 C CNN
+	1    3550 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5F038A10
+P 3550 3600
+F 0 "TP5" V 3745 3672 50  0000 C CNN
+F 1 "TestPoint" V 3654 3672 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 3750 3600 50  0001 C CNN
+F 3 "~" H 3750 3600 50  0001 C CNN
+	1    3550 3600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3550 3600 2    50   Input ~ 0
+1WIRE_NEARCAT
+Wire Wire Line
+	2800 2050 3700 2050
+Wire Wire Line
+	3700 2050 3700 3050
+Wire Wire Line
+	3700 3050 3550 3050
+$Comp
+L power:GND #PWR0144
+U 1 1 5F04916F
+P 3550 3350
+F 0 "#PWR0144" H 3550 3100 50  0001 C CNN
+F 1 "GND" V 3555 3222 50  0000 R CNN
+F 2 "" H 3550 3350 50  0001 C CNN
+F 3 "" H 3550 3350 50  0001 C CNN
+	1    3550 3350
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	3200 3800 4150 3800
+Wire Notes Line
+	4150 3800 4150 2700
+Wire Notes Line
+	4150 2700 3200 2700
+Wire Notes Line
+	3200 2700 3200 3800
+Text Notes 3250 3950 0    50   ~ 0
+DS18B20 close-to-cat \ntemperature sensor
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5F0BA70D
+P 10800 900
+F 0 "TP7" V 10995 972 50  0000 C CNN
+F 1 "TestPoint" V 10904 972 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D3.80mm_Drill2.8mm" H 11000 900 50  0001 C CNN
+F 3 "~" H 11000 900 50  0001 C CNN
+	1    10800 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5F0C0ACF
+P 10750 1750
+F 0 "TP6" V 10945 1822 50  0000 C CNN
+F 1 "TestPoint" V 10854 1822 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D3.80mm_Drill2.8mm" H 10950 1750 50  0001 C CNN
+F 3 "~" H 10950 1750 50  0001 C CNN
+	1    10750 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9850 1350 9850 1200
+Wire Wire Line
+	9850 1200 10600 1200
+Wire Wire Line
+	10600 1200 10600 900 
+Wire Wire Line
+	10600 900  10800 900 
+Connection ~ 9850 1350
+Wire Wire Line
+	9850 1350 10000 1350
+Wire Wire Line
+	9850 1500 9850 1750
+Wire Wire Line
+	9850 1750 10750 1750
+Connection ~ 9850 1500
+Wire Wire Line
+	9850 1500 10000 1500
+Text Label 7100 4350 0    50   ~ 0
+GND_COMMON
+$Comp
+L Graphic:SYM_ESD_Large SYM1
+U 1 1 5F0CA036
+P 6950 5150
+F 0 "SYM1" H 6950 5350 50  0001 C CNN
+F 1 "SYM_ESD_Large" H 6950 4900 50  0001 C CNN
+F 2 "Symbol:Symbol_ESD-Logo_CopperTop" H 6945 5120 50  0001 C CNN
+F 3 "~" H 6945 5120 50  0001 C CNN
+	1    6950 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4250 2900 1000
+Wire Wire Line
+	2900 1000 3100 1000
+Connection ~ 2900 4250
+Wire Wire Line
+	2900 4250 2800 4250
+Wire Wire Line
+	10150 3500 10150 2600
+Wire Bus Line
+	4600 1650 4600 3050
+Wire Wire Line
+	4200 950  4850 950 
+Wire Wire Line
+	4050 2100 4050 1350
+Wire Wire Line
+	4050 1350 2050 1350
+Wire Wire Line
+	2050 1350 2050 1250
+Wire Wire Line
+	2050 1250 1800 1250
+Wire Wire Line
+	4000 2200 4000 1400
+Wire Wire Line
+	4000 1400 2000 1400
+Wire Wire Line
+	2000 1400 2000 1350
+Wire Wire Line
+	2000 1350 1800 1350
+Wire Wire Line
+	4000 2200 5250 2200
+Wire Wire Line
+	3950 2300 3950 1450
+Wire Wire Line
+	3950 1450 1800 1450
+Wire Wire Line
+	3950 2300 5250 2300
+Wire Wire Line
+	3900 2400 3900 1500
+Wire Wire Line
+	3900 1500 2000 1500
+Wire Wire Line
+	2000 1500 2000 1550
+Wire Wire Line
+	2000 1550 1800 1550
+Wire Wire Line
+	3900 2400 5250 2400
+Wire Wire Line
+	1350 2750 1600 2750
+Wire Wire Line
+	1350 2950 1500 2950
+Text Label 1900 1150 0    50   ~ 0
+DIS_SDA
+Wire Wire Line
+	2350 850  2200 850 
+Wire Wire Line
+	2200 850  2200 1150
+Wire Wire Line
+	2200 1150 1800 1150
+Wire Wire Line
+	2350 950  2350 1050
+Wire Wire Line
+	2350 1050 1800 1050
+Wire Wire Line
+	2600 1150 2300 1150
+Wire Wire Line
+	2300 1150 2300 1100
+Wire Wire Line
+	2300 1100 1850 1100
+Wire Wire Line
+	1850 1100 1850 950 
+Wire Wire Line
+	1850 950  1800 950 
+Wire Wire Line
+	2600 850  2600 1150
+Wire Bus Line
+	5800 3050 5800 3250
+Wire Bus Line
+	4850 1650 4850 1850
+Wire Bus Line
+	10000 650  10000 950 
+Wire Bus Line
+	2450 950  2450 1300
+Wire Wire Line
+	4850 1350 4850 3000
+$Sheet
+S 1350 3950 1450 750 
+U 5EF7AECB
+F0 "12V and 5V Buck" 50
+F1 "Buck12V5V.sch" 50
+F2 "V_12V" O R 2800 4250 50 
+F3 "Vin_24V" I L 1350 4150 50 
+$EndSheet
+$EndSCHEMATC

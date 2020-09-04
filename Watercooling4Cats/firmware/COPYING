@@ -1,0 +1,7 @@
+This project code is licenced under the GNU GPL v3 (licence text in GPLv3.txt) except for:
+
+
+- ARM CMSIS 5 (Apache-2.0 - see Apache-2.0.txt for terms) - code in deps/CMSIS_5 directory
+- STMicroelectronics STM32F1 HAL/LL library - BSD 3 clauses
+- Bits of musl lib (MIT licence, see deps/musl/COPYRIGHT)
+- A minimal printf implementation by Marco Paland (MIT licence)

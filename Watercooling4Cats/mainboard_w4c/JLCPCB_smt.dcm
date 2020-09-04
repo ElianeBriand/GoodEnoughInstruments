@@ -1,0 +1,30 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADT7467
+D dbCOOL Remote Thermal Monitor and Fan Controller
+$ENDCMP
+#
+$CMP AO3400A
+D 5.7A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf
+$ENDCMP
+#
+$CMP AO4407A
+F http://www.aosmd.com/pdfs/datasheet/AO4407A.pdf
+$ENDCMP
+#
+$CMP CAT5171
+F https://www.onsemi.com/pub/Collateral/CAT5171-D.PDF
+$ENDCMP
+#
+$CMP LM3409HV
+F https://www.ti.com/lit/gpn/lm3409hv
+$ENDCMP
+#
+$CMP TC74
+D TO-220 form factor temperature sensor
+F https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwju66TilaTqAhWGFxQKHXq2CmoQFjABegQIARAB&url=http%3A%2F%2Fww1.microchip.com%2Fdownloads%2Fen%2FDeviceDoc%2F21462D.pdf&usg=AOvVaw2kbOgQz2lLYXzi7XmPQITL
+$ENDCMP
+#
+#End Doc Library

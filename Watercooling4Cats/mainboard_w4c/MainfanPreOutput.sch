@@ -1,0 +1,144 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 5250 4350 2    50   Input ~ 0
+SENSE_MAINFAN_CONN
+Text HLabel 5250 3600 2    50   Input ~ 0
+V_MAINFAN_12
+Text HLabel 2700 3700 0    50   Input ~ 0
+V_MCU_3.3
+Text HLabel 5250 4750 2    50   Output ~ 0
+SENSE_MAINFAN_3.3
+Wire Wire Line
+	2750 4700 2750 5400
+Wire Wire Line
+	2750 5400 2750 5450
+Connection ~ 2750 5400
+Connection ~ 3850 4350
+Wire Wire Line
+	4350 4350 4350 4400
+Wire Wire Line
+	3850 4350 4350 4350
+Connection ~ 4350 4750
+Wire Wire Line
+	4350 4750 4350 4950
+Wire Wire Line
+	4350 4750 5250 4750
+Wire Wire Line
+	4350 4750 4350 4700
+Wire Wire Line
+	3850 3700 3850 4350
+Wire Wire Line
+	2700 3700 3850 3700
+Connection ~ 4500 4000
+Wire Wire Line
+	2950 4000 2950 4350
+Wire Wire Line
+	4500 4000 2950 4000
+$Comp
+L Device:R R?
+U 1 1 5EECCA70
+P 4350 4550
+F 0 "R?" H 4420 4596 50  0000 L CNN
+F 1 "10KR" H 4420 4505 50  0000 L CNN
+F 2 "" V 4280 4550 50  0001 C CNN
+F 3 "~" H 4350 4550 50  0001 C CNN
+	1    4350 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 5400 2750 5400
+Connection ~ 3800 5400
+Wire Wire Line
+	3800 5300 3800 5400
+Wire Wire Line
+	4050 5000 4050 5150
+Connection ~ 4050 5000
+Wire Wire Line
+	4050 5000 3800 5000
+$Comp
+L Device:R R?
+U 1 1 5EEC2840
+P 3800 5150
+F 0 "R?" H 3870 5196 50  0000 L CNN
+F 1 "10KR" H 3870 5105 50  0000 L CNN
+F 2 "" V 3730 5150 50  0001 C CNN
+F 3 "~" H 3800 5150 50  0001 C CNN
+	1    3800 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4700 4050 5000
+Wire Wire Line
+	3850 4700 4050 4700
+Wire Wire Line
+	4350 5400 3800 5400
+Wire Wire Line
+	4350 5350 4350 5400
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5EEBC462
+P 4250 5150
+F 0 "Q?" H 4455 5196 50  0000 L CNN
+F 1 "3.3 small signal NFET" H 4455 5105 50  0000 L CNN
+F 2 "" H 4450 5250 50  0001 C CNN
+F 3 "~" H 4250 5150 50  0001 C CNN
+	1    4250 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4000 4500 4350
+Wire Wire Line
+	2950 4700 2750 4700
+$Comp
+L power:GND #PWR?
+U 1 1 5EEB6ACE
+P 2750 5450
+F 0 "#PWR?" H 2750 5200 50  0001 C CNN
+F 1 "GND" H 2755 5277 50  0000 C CNN
+F 2 "" H 2750 5450 50  0001 C CNN
+F 3 "" H 2750 5450 50  0001 C CNN
+	1    2750 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L JLCPCB_smt:EL357N(B)(TA)-G U?
+U 1 1 5EEB5161
+P 3400 4300
+F 0 "U?" H 3400 4475 50  0000 C CNN
+F 1 "EL357N(B)(TA)-G" H 3400 4384 50  0000 C CNN
+F 2 "" H 3350 4500 50  0001 C CNN
+F 3 "" H 3350 4500 50  0001 C CNN
+	1    3400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4350 5250 4350
+Wire Wire Line
+	4500 3600 4500 3700
+Wire Wire Line
+	5250 3600 4500 3600
+$Comp
+L Device:R R?
+U 1 1 5EEB365C
+P 4500 3850
+F 0 "R?" H 4570 3896 50  0000 L CNN
+F 1 "10KR" H 4570 3805 50  0000 L CNN
+F 2 "" V 4430 3850 50  0001 C CNN
+F 3 "~" H 4500 3850 50  0001 C CNN
+	1    4500 3850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
